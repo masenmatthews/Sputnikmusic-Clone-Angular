@@ -1,3 +1,12 @@
-<p>
-  new-article works!
-</p>
+<h3 id="new-article-name">Submit news article</h3>
+<div class="form-group">
+  <label>Enter title:</label>
+  <input #newArticleTitle class="form-control">
+</div>
+<div class="form-group">
+  <label>Enter body:</label>
+  <input #newArticleBody class="form-control">
+</div>
+<div>
+  <button (click)="submitForm(newArticleTitle.value, newArticleBody.value); newArticleTitle.value=''; newArticleBody.value='';" class="btn btn-primary btn-lg">Add article</button>
+</div>

@@ -7,6 +7,7 @@ import { EditReviewComponent } from './edit-review/edit-review.component';
 import { DetailReviewComponent } from './detail-review/detail-review.component';
 import { ViewReviewComponent } from './view-review/view-review.component';
 import { NewArticleComponent } from './new-article/new-article.component';
+import { EditArticleComponent } from './edit-article/edit-article.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NewArticleComponent } from './new-article/new-article.component';
     EditReviewComponent,
     DetailReviewComponent,
     ViewReviewComponent,
-    NewArticleComponent
+    NewArticleComponent,
+    EditArticleComponent
   ],
   imports: [
     BrowserModule,
