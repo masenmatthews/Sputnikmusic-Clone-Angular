@@ -1,0 +1,5 @@
+<div *ngIf="childSelectedArticle">
+  <h2>{{childSelectedArticle.title}}</h2>
+  <p>{{childSelectedArticle.body}}</p>
+  <button (click)="editButtonClicked(childSelectedArticle)" class="btn btn-info">Edit review</button>
+</div>
