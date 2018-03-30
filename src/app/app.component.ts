@@ -15,23 +15,18 @@ export class AppComponent {
   new Review("The Hotelier", "Goodness", "Indie rock", "A great follow-up to their last album, but not quite as good", "INSERT REVIEW BODY HERE", 4)];
   selectedReview: Review = null;
   selectedReview2: Review = null;
-  showReviewForm: boolean = false;
 
   masterArticleList: Article[] = [new Article("Dave Matthews Band detained at border", "INSERT ARTICLE BODY HERERE"),
   new Article("Motley Crue calls it quits", "Finally"),
   new Article("Kenny Chesney banned from Pittsburgh", "Bummer")];
   selectedArticle: Article = null;
   selectedArticle2: Article = null;
-  showArticleForm: boolean = false;
+  showForm: boolean = false;
 
-  updateShowReviewForm(formState) {
-    this.showReviewForm = formState;
+  updateShowForm(formState) {
+    this.showForm = formState;
     this.selectedReview = null;
     this.selectedReview2 = null;
-  }
-
-  updateShowArticleForm(formState) {
-    this.showArticleForm = formState;
     this.selectedReview = null;
     this.selectedReview2 = null;
   }
