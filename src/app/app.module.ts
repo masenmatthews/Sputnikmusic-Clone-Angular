@@ -4,12 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NewReviewComponent } from './new-review/new-review.component';
 import { EditReviewComponent } from './edit-review/edit-review.component';
+import { ReviewDetailComponent } from './review-detail/review-detail.component';
+import { DetailReviewComponent } from './detail-review/detail-review.component';
+import { ViewReviewComponent } from './view-review/view-review.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewReviewComponent,
-    EditReviewComponent
+    EditReviewComponent,
+    ReviewDetailComponent,
+    DetailReviewComponent,
+    ViewReviewComponent
   ],
   imports: [
     BrowserModule,
