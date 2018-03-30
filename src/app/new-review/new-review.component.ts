@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Review } from '../models/review.model';
 
 @Component({
@@ -7,7 +7,7 @@ import { Review } from '../models/review.model';
   styleUrls: ['./new-review.component.css']
 })
 
-export class NewReviewComponent implements OnInit {
+export class NewReviewComponent {
 
   @Output() sendReview = new EventEmitter();
 
