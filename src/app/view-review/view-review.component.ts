@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
-import { Review } from '../models/review.model.ts';
+import { Review } from '../models/review.model';
 
 @Component({
   selector: 'app-view-review',
