@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+}
+
+.container {
+  background-color: gray;
+}
+
+#main-head {
+  color: white;
+  text-align: left;
+  margin-left: 30px;
+  font-family: georgia;
+  background-color: gray;
+  font-size: 4em;
+
+}

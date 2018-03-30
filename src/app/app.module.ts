@@ -10,6 +10,8 @@ import { NewArticleComponent } from './new-article/new-article.component';
 import { EditArticleComponent } from './edit-article/edit-article.component';
 import { ViewArticleComponent } from './view-article/view-article.component';
 import { DetailArticleComponent } from './detail-article/detail-article.component';
+import { ShowReviewComponent } from './show-review/show-review.component';
+import { ShowNewsComponent } from './show-news/show-news.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { DetailArticleComponent } from './detail-article/detail-article.componen
     NewArticleComponent,
     EditArticleComponent,
     ViewArticleComponent,
-    DetailArticleComponent
+    DetailArticleComponent,
+    ShowReviewComponent,
+    ShowNewsComponent
   ],
   imports: [
     BrowserModule,
