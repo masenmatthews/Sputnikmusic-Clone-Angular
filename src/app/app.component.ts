@@ -33,12 +33,12 @@ export class AppComponent {
 
   addReview(newReview: Review) {
     this.masterReviewList.push(newReview);
-    this.showReviewForm = false;
+    this.showForm = false;
   }
 
   addArticle(newArticle: Article) {
     this.masterArticleList.push(newArticle);
-    this.showArticleForm = false;
+    this.showForm = false;
   }
 
   editReview(clickedReview) {
@@ -59,13 +59,13 @@ export class AppComponent {
   viewReview(clickedReview) {
     this.selectedReview = clickedReview;
     this.selectedReview2 = null;
-    this.showReviewForm = false;
+    this.showForm = false;
   }
 
   viewArticle(clickedArticle) {
     this.selectedArticle = clickedArticle;
     this.selectedArticle2 = null;
-    this.showArticleForm = false;
+    this.showForm = false;
   }
 
   finishedReviewEditing() {
