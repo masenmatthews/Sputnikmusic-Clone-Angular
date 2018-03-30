@@ -4,7 +4,7 @@ import { Article } from '../models/article.model';
 import { Review } from '../models/review.model';
 
 @Component({
-  selector: 'show-article-list',
+  selector: 'app-show-article',
   templateUrl: './show-article.component.html',
   styleUrls: ['./show-article.component.css']
 })
