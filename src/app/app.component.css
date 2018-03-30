@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: white;
 }
 
 .container {
@@ -13,5 +13,4 @@ body {
   font-family: georgia;
   background-color: gray;
   font-size: 4em;
-
 }

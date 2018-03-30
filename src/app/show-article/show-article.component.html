@@ -4,9 +4,8 @@
   </div>
   <div class="sidebar">
     <div class="well">
-      <ul>
-
-      </ul>
-    </div>
+        <li id="show-form" (click)="displayForm()">Add new article</li>
+        <li *ngFor="let currentArticle of childArticleList" (click)="articleClicked(currentArticle)">{{currentArticle.title}}
+        </li>
   </div>
 </div>
