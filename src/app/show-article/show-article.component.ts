@@ -34,5 +34,4 @@ export class ShowArticleComponent implements OnInit {
   newArticleClicked() {
     this.newArticle.emit();
   }
-
 }

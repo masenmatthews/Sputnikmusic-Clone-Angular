@@ -18,7 +18,7 @@ export class AppComponent {
 
   masterArticleList: Article[] = [new Article("Dave Matthews Band detained at border", "INSERT ARTICLE BODY HERERE"),
   new Article("Motley Crue calls it quits", "Finally"),
-  new Article("Kenny Chesney banned from Pittsburgh", "Bummer")];
+  new Article("Kenny Chesney banned from Pittsburgh", "is anyone upset?")];
   selectedArticle: Article = null;
   selectedArticle2: Article = null;
   showForm: boolean = false;
@@ -27,8 +27,8 @@ export class AppComponent {
     this.showForm = formState;
     this.selectedReview = null;
     this.selectedReview2 = null;
-    this.selectedReview = null;
-    this.selectedReview2 = null;
+    this.selectedArticle = null;
+    this.selectedArticle2 = null;
   }
 
   addReview(newReview: Review) {
