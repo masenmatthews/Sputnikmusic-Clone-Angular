@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Review } from './models/review.model';
+import { Article } from './models/article.model';
 
 @Component({
   selector: 'app-root',
@@ -14,17 +15,35 @@ export class AppComponent {
   new Review("The Hotelier", "Goodness", "Indie rock", "A great follow-up to their last album, but not quite as good", "INSERT REVIEW BODY HERE", 4)];
   selectedReview: Review = null;
   selectedReview2: Review = null;
-  showForm: boolean = false;
+  showReviewForm: boolean = false;
 
-  updateShowForm(formState) {
-    this.showForm = formState;
+  masterArticleList: Article[] = [new Article("Dave Matthews Band detained at border", "INSERT ARTICLE BODY HERERE"),
+  new Article("Motley Crue calls it quits", "Finally"),
+  new Article("Kenny Chesney banned from Pittsburgh", "Bummer")];
+  selectedArticle: Article = null;
+  selectedArticle2: Article = null;
+  showArticleForm: boolean = false;
+
+  updateShowReviewForm(formState) {
+    this.showReviewForm = formState;
     this.selectedReview = null;
+    this.selectedReview2 = null;
+  }
+
+  updateShowArticleForm(formState) {
+    this.showArticleForm = formState;
     this.selectedReview = null;
+    this.selectedReview2 = null;
   }
 
   addReview(newReview: Review) {
     this.masterReviewList.push(newReview);
-    this.showForm = false;
+    this.showReviewForm = false;
+  }
+
+  addArticle(newArticle: Article) {
+    this.masterArticleList.push(newArticle);
+    this.showArticleForm = false;
   }
 
   editReview(clickedReview) {
@@ -32,24 +51,45 @@ export class AppComponent {
     this.selectedReview = null;
   }
 
-  editBtnClicked(childSelectedReview) {
-    console.log("review # " + childSelectedReview);
-    childSelectedReview.editButtonClicked(childSelectedReview);
+  editArticle(clickedArticle) {
+    this.selectedArticle2 = clickedArticle;
+    this.selectedArticle = null;
   }
+
+  // editBtnClicked(childSelectedReview) {
+  //   console.log(childSelectedReview);
+  //   childSelectedReview.editButtonClicked(childSelectedReview);
+  // }
 
   viewReview(clickedReview) {
     this.selectedReview = clickedReview;
     this.selectedReview2 = null;
-    this.showForm = false;
+    this.showReviewForm = false;
   }
 
-  finishedEditing() {
+  viewArticle(clickedArticle) {
+    this.selectedArticle = clickedArticle;
+    this.selectedArticle2 = null;
+    this.showArticleForm = false;
+  }
+
+  finishedReviewEditing() {
     this.selectedReview2 = null;
+  }
+
+  finishedArticleEditing() {
+    this.selectedArticle2 = null;
   }
 
   deleteReview() {
     let index = this.masterReviewList.indexOf(this.selectedReview2)
     this.masterReviewList.splice(index, 1);
     this.selectedReview2 = null;
+  }
+
+  deleteArticle() {
+    let index = this.masterArticleList.indexOf(this.selectedArticle2)
+    this.masterArticleList.splice(index, 1);
+    this.selectedArticle2 = null;
   }
 }
