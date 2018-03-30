@@ -11,7 +11,7 @@ import { EditArticleComponent } from './edit-article/edit-article.component';
 import { ViewArticleComponent } from './view-article/view-article.component';
 import { DetailArticleComponent } from './detail-article/detail-article.component';
 import { ShowReviewComponent } from './show-review/show-review.component';
-import { ShowNewsComponent } from './show-news/show-news.component';
+import { ShowArticleComponent } from './show-article/show-article.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { ShowNewsComponent } from './show-news/show-news.component';
     ViewArticleComponent,
     DetailArticleComponent,
     ShowReviewComponent,
-    ShowNewsComponent
+    ShowArticleComponent
   ],
   imports: [
     BrowserModule,
