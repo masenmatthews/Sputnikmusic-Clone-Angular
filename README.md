@@ -21,7 +21,21 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   * Navigate to localhost:4200 in Google Chrome or desired browser
 
 ## Specifications
+// Week one
+  * Site allows user to:
+      -create, read, update, and delete news items
+      -create, read, update, and delete music reviews
+      -create, read, update, and delete music lists
+      -create, read, update, and delete music soundoffs
 
+  * Site contains the following:
+      -A sidebar with music news and trending albums
+      -A section for "best new music"
+      -A container with featured albums
+      -A container with music lists
+
+// Week two
+  * To be determined 
 
 ## Technologies Used
 
