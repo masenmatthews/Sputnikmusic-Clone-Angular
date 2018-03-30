@@ -1,3 +1,31 @@
-<p>
-  edit-review works!
-</p>
+<div id="edit-review-div" *ngIf="childSelectedReview2">
+  <h3 class="recipe-title">{{childSelectedReview2.artist}} - {{childSelectedReview2.album}}</h3>
+  <h3>Edit review</h3>
+  <div class="form-group">
+    <label>Edit artist:</label>
+    <input [(ngModel)]="childSelectedReview2.artist" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Edit album:</label>
+    <input [(ngModel)]="childSelectedReview2.album" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Edit rating:</label>
+    <input [(ngModel)]="childSelectedReview2.rating" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Edit genre:</label>
+    <input [(ngModel)]="childSelectedReview2.genre" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Edit genre:</label>
+    <input [(ngModel)]="childSelectedReview2.description" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Edit genre:</label>
+    <input [(ngModel)]="childSelectedReview2.body" class="form-control">
+  </div>
+  <br>
+  <button (click)="finishedEditing()" class="btn btn-primary btn-lg">Done editing</button>
+  <button (click)="deleteRecipe()" class="btn btn-danger btn-lg">Delete review</button>
+</div>

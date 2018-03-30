@@ -17,7 +17,7 @@ export class ViewReviewComponent implements OnInit {
 
   @Output() clickSender = new EventEmitter();
 
-  editButtonClicked(ReviewToEdit: Review) {
+  editButtonClicked(reviewToEdit: Review) {
     this.clickSender.emit(reviewToEdit);
   }
 

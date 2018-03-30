@@ -1,3 +1,28 @@
-<p>
-  new-review works!
-</p>
+<h3 id="new-review-name">New review</h3>
+<div class="form-group">
+  <label>Enter artist:</label>
+  <input #newArtist class="form-control">
+</div>
+<div class="form-group">
+  <label>Enter album:</label>
+  <input #newAlbum class="form-control">
+</div>
+<div class="form-group">
+  <label>Enter genre:</label>
+  <input #newGenre class="form-control">
+</div>
+<div class="form-group">
+  <label>Enter short description/summary:</label>
+  <input #newDescription class="form-control">
+</div>
+<div class="form-group">
+  <label>Enter review body:</label>
+  <input #newBody class="form-control">
+</div>
+<div class="form-group">
+  <label>Enter album rating:</label>
+  <input #newRating class="form-control">
+</div>
+<div>
+  <button (click)="submitForm(newArtist.value, newAlbum.value, newGenre.value, newDescription.value, newBody.value, newRating.value); newArtist.value=''; newAlbum.value='';newGenre.value=''; newDescription.value=''; newBody.value=''; newRating.value='';" class="btn btn-primary btn-lg">Add review</button>
+</div>

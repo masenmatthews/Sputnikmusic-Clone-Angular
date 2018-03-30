@@ -11,7 +11,7 @@ export class NewReviewComponent implements OnInit {
 
   @Output() sendReview = new EventEmitter();
 
-  submitForm(artist: string, album: string, genre: string, title: string, description: string, body: string, rating: number) {
+  submitForm(artist: string, album: string, genre: string, description: string, body: string, rating: number) {
     let newReview: Review = new Review(artist, album, genre, description, body, rating);
     this.sendReview.emit(newReview);
   }
