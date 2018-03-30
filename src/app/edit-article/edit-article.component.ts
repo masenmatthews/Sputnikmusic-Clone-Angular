@@ -1,5 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { ViewArticleComponent } from '../view-article/view-article.component';
 import { Article } from '../models/article.model'
+import { Review } from '../models/review.model';
 
 @Component({
   selector: 'app-edit-article',
