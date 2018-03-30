@@ -35,7 +35,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
       -A container with music lists
 
 // Week two
-  * To be determined 
+  * To be determined
 
 ## Technologies Used
 
