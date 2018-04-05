@@ -12,6 +12,9 @@ import { ViewArticleComponent } from './view-article/view-article.component';
 import { DetailArticleComponent } from './detail-article/detail-article.component';
 import { ShowReviewComponent } from './show-review/show-review.component';
 import { ShowArticleComponent } from './show-article/show-article.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { HomeComponent } from './home/home.component';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -25,11 +28,14 @@ import { ShowArticleComponent } from './show-article/show-article.component';
     ViewArticleComponent,
     DetailArticleComponent,
     ShowReviewComponent,
-    ShowArticleComponent
+    ShowArticleComponent,
+    ReviewsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,17 +1,20 @@
 <body>
   <div class="container">
-    <h1 id="main-head">Sputnik clone</h1>
-    <div id="navbar">
+    <h1>{{title}}</h1>
+      <router-outlet></router-outlet>
+      <h1 id="main-head">Sputnik clone</h1>
+      <div id="navbar">
 
     </div>
+  </div>
 
     <div class="wrapper">
       <div class="content-col">
         <div *ngIf="showForm">
           <app-new-review (sendReview)="addReview($event)"></app-new-review>
         </div>
-        <app-view-review [childSelectedReview] = 'selectedReview'  (clickSender)="editReview($event)"></app-view-review>
-        <app-edit-review [childSelectedReview2] = 'selectedReview2' (clickedDone)="finishedEditing()" (clickedReview)="deleteReview()"></app-edit-review>
+          <app-view-review [childSelectedReview] = 'selectedReview'  (clickSender)="editReview($event)"></app-view-review>
+          <app-edit-review [childSelectedReview2] = 'selectedReview2' (clickedDone)="finishedEditing()" (clickedReview)="deleteReview()"></app-edit-review>
       </div>
     </div>
 
