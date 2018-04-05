@@ -1,10 +1,8 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
-import { ViewArticleComponent } from '../view-article/view-article.component';
 import { Article } from '../models/article.model';
-import { Review } from '../models/review.model';
 
 @Component({
-  selector: 'app-show-article',
+  selector: 'show-article-list',
   templateUrl: './show-article.component.html',
   styleUrls: ['./show-article.component.css']
 })
@@ -34,4 +32,5 @@ export class ShowArticleComponent implements OnInit {
   newArticleClicked() {
     this.newArticle.emit();
   }
+
 }
