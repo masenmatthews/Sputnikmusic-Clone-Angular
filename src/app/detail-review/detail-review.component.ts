@@ -4,6 +4,7 @@ import { ViewReviewComponent } from '../view-review/view-review.component';
 import { Location } from '@angular/common';
 import { Review } from '../models/review.model';
 import { ReviewService } from '../review.service';
+import { REVIEWS } from '../mock-reviews';
 
 @Component({
   selector: 'app-detail-review',
