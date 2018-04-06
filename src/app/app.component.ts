@@ -9,9 +9,9 @@ import { Review } from './models/review.model';
 export class AppComponent {
   title = 'Sputnik Clone';
 
-  masterReviewList: Review[] = [new Review("SampleArtist", "SampleAlbum", "SampleGenre", "SampleDescription", "SampleBody", 3),
-  new Review("Opeth", "Blackwater Park", "Progressive metal", "A timeless metal release", "INSERT REVIEW BODY HERE", 4),
-  new Review("The Hotelier", "Goodness", "Indie rock", "A great follow-up to their last album, but not quite as good", "INSERT REVIEW BODY HERE", 4)];
+  masterReviewList: Review[] = [new Review("SampleArtist", "SampleAlbum", "SampleGenre", "SampleDescription", "SampleBody", 1, 0),
+  new Review("Opeth", "Blackwater Park", "Progressive metal", "A timeless metal release", "INSERT REVIEW BODY HERE", 4, 1),
+  new Review("The Hotelier", "Goodness", "Indie rock", "A great follow-up to their last album, but not quite as good", "INSERT REVIEW BODY HERE", 4, 2)];
   selectedReview: Review = null;
   selectedReview2: Review = null;
   showForm: boolean = false;

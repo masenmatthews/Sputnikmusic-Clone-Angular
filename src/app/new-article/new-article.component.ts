@@ -11,8 +11,8 @@ export class NewArticleComponent {
 
   @Output() sendArticle = new EventEmitter();
 
-  submitForm(title: string, body: string) {
-    let newArticle: Article = new Article(title, body);
+  submitForm(title: string, body: string, id: number) {
+    let newArticle: Article = new Article(title, body, id);
     this.sendArticle.emit(newArticle);
   }
 }

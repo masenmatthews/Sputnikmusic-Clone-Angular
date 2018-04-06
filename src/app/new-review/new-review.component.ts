@@ -11,8 +11,8 @@ export class NewReviewComponent {
 
   @Output() sendReview = new EventEmitter();
 
-  submitForm(artist: string, album: string, genre: string, description: string, body: string, rating: number) {
-    let newReview: Review = new Review(artist, album, genre, description, body, rating);
+  submitForm(artist: string, album: string, genre: string, description: string, body: string, rating: number, id: number) {
+    let newReview: Review = new Review(artist, album, genre, description, body, rating, id);
     this.sendReview.emit(newReview);
   }
 }
