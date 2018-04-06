@@ -15,12 +15,16 @@ export class ReviewService {
     return this.reviews;
   }
 
-  getReviewById(reviewId: number){
-  for (var i = 0; i <= REVIEWS.length - 1; i++) {
-    if (REVIEWS[i].id === reviewId) {
-      return REVIEWS[i];
-    }
+  addReview(newReview: Review) {
+  this.reviews.push(newReview);
   }
+
+  getReviewById(reviewId: number){
+//   for (var i = 0; i <= REVIEWS.length - 1; i++) {
+//     if (REVIEWS[i].id === reviewId) {
+//       return REVIEWS[i];
+//     }
+//   }
 }
 
   // deleteReview(localReviewToDelete){
