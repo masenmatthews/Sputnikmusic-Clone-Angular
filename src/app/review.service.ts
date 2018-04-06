@@ -19,4 +19,9 @@ export class ReviewService {
   }
 }
 
+  // deleteReview(localReviewToDelete){
+  //  var albumEntryInFirebase = this.getReviewById(localReviewtoDelete.$key);
+  //  reviewEntryInFirebase.remove();
+  // }
+
 }

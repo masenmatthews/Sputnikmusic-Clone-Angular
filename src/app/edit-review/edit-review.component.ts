@@ -11,19 +11,19 @@ import { DetailReviewComponent } from '../detail-review/detail-review.component'
   styleUrls: ['./edit-review.component.css'],
   providers: [ReviewService]
 })
-export class EditReviewComponent {
 
-  constructor() { }
-  @Input() childSelectedReview: Review;
-  @Output() clickedDone = new EventEmitter;
-  @Output() clickedDelete = new EventEmitter;
+export class EditReviewComponent implements OnInit {
+  @Input() childSelectedReview;
 
-  finishedEditing() {
-    this.clickedDone.emit();
-  }
+ constructor(private reviewService: ReviewService) { }
 
-  deleteReview() {
-    this.clickedDelete.emit();
-  }
+ ngOnInit() {
+ }
+
+ deleteReview(reviewToDelete){
+   if(confirm("Are you sure you want to delete this review?")){
+     this.reviewService.deleteReview(reviewToDelete);
+   }
+ }
 
 }
