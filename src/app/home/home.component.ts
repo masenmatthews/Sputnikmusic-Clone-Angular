@@ -20,9 +20,9 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.reviews = this.reviewService.getReviews();
   }
-
-  goToDetailPage(clickedReview: Review) {
-    this.router.navigate(['reviews', clickedReview.id]);
-  };
+  //
+  // goToDetail(clickedReview: Review) {
+  //   this.router.navigate(['reviews', clickedReview.id]);
+  // };
 
 }
