@@ -35,6 +35,5 @@ export class DetailReviewComponent implements OnInit {
   @Output() clickSender = new EventEmitter();
   editButtonClicked(reviewToEdit: Review) {
     this.clickSender.emit(reviewToEdit);
-  }
-
+  };
 }
