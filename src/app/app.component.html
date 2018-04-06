@@ -1,12 +1,19 @@
-<body>
   <div class="container">
-    <h1>{{title}}</h1>
-      <router-outlet></router-outlet>
-      <h1 id="main-head">Sputnik clone</h1>
+    <h1 id ="main-head">{{title}}</h1>
+      <!-- <router-outlet></router-outlet> -->
       <div id="navbar">
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" routerLink="">Home</a>
+          <a class="navbar-brand" routerLink="reviews">Reviews</a>
+          <a class="navbar-brand" routerLink="news">News</a>
+          <a class="navbar-brand" routerLink="blog">Blog</a>
+        </nav>
+        <hr>
+        <router-outlet></router-outlet>
     </div>
   </div>
+
+  <!-- </div>
 
     <div class="wrapper">
       <div class="content-col">
@@ -18,5 +25,4 @@
       </div>
     </div>
 
-  </div>
-</body>
+  </div> -->
