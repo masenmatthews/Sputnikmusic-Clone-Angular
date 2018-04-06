@@ -17,25 +17,36 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   * Run $ npm install -g @angular/cli@1.6.5 to install Angular. This step may be skipped if Angular is already installed.  
     - If you're on a Mac and get an error: Type "brew upgrade node"
   * Run $ npm install in the root project directory to install required dependencies
+  * Run $ npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save" to add firebase if it isn't already in place
+  * Add a file called 'api-keys' to ../src/app. This will create a file where Firebase information can be added. The Firebase site will provide you with information that is required to add database functionality. Add the following snippet of code to this file after it is created and you have the appropriate information:
+
+  export var masterFirebaseConfig = {
+      apiKey: "INSERT KEY",
+      authDomain: "INSERT AUTHDOMAIN",
+      databaseURL: "INSERT DATABASEURL,
+      storageBucket: "INSERT STORAGEBUCKET (IF APPLICABLE)",
+      messagingSenderId: "INSERT MESSAGINGSENDERID"
+    };
+
   * Type "ng serve" to launch development server
   * Navigate to localhost:4200 in Google Chrome or desired browser
 
 ## Specifications
-// Week one
-  * Site allows user to:
-      -create, read, update, and delete news items
-      -create, read, update, and delete music reviews
-      -create, read, update, and delete music lists
-      -create, read, update, and delete music soundoffs
+* Site allows user to:
+    -create, read, update, and delete news items
+    -create, read, update, and delete music reviews
+    -create, read, update, and delete blog posts
 
-  * Site contains the following:
-      -A sidebar with music news and trending albums
-      -A section for "best new music"
-      -A container with featured albums
-      -A container with music lists
+* Site contains the following:
+    -A sidebar with music news and trending albums
+    -A section for "best new music"
+    -A container with featured albums
 
-// Week two
-  * To be determined
+## Future expansion
+    -Site will allow users to upload album artwork
+    -Site will allow users to create, read, update, and delete music lists
+    -Site will allow users to create, read, update, and delete music soundoffs
+    -Other surprise features may be added as well
 
 ## Technologies Used
 
@@ -57,8 +68,6 @@ Support inquiries, ideas, suggestions, and other contact inquiries can be direct
 Github - masenmatthews
 Email - masenmatthews@gmail.com
 
-## Future expansion
-. . .
 
 ## Development server
 
