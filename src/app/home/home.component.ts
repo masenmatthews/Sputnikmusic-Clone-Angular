@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Review } from '../models/review.model';
+import { Router } from '@angular/router';
+import { Review } from '../models/review.model'
+import { REVIEWS } from '../mock-reviews';
 
 @Component({
   selector: 'app-home',
