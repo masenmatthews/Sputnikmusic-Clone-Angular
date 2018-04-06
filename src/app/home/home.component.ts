@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Review } from '../models/review.model'
 import { REVIEWS } from '../mock-reviews';
 import { ReviewService } from '../review.service';
+import { DetailReviewComponent } from '../detail-review/detail-review.component'
 
 @Component({
   selector: 'app-home',

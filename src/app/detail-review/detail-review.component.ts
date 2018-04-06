@@ -12,7 +12,7 @@ import { ReviewService } from '../review.service';
   providers: [ReviewService]
 })
 export class DetailReviewComponent implements OnInit {
-  reviewId: number;
+  reviewId: number = null;
   reviewToDisplay: Review;
 
   @Input() childSelectedReview: Review;
