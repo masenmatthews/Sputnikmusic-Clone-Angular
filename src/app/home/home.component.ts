@@ -4,6 +4,7 @@ import { Review } from '../models/review.model'
 import { REVIEWS } from '../mock-reviews';
 import { ReviewService } from '../review.service';
 import { DetailReviewComponent } from '../detail-review/detail-review.component'
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-home',
@@ -13,12 +14,12 @@ import { DetailReviewComponent } from '../detail-review/detail-review.component'
 })
 
 export class HomeComponent implements OnInit {
+  // reviews: FirebaseListObservable<any[]>;
   reviews: Review[];
-
   constructor(private router: Router, private reviewService: ReviewService) { }
 
   ngOnInit() {
-    this.reviews = this.reviewService.getReviews();
+    // this.reviews = this.reviewService.getReviews();
   }
 
   goToDetailPage(clickedReview: Review) {

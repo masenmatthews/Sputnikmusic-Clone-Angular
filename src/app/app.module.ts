@@ -44,7 +44,7 @@ export const firebaseConfig = {
     ReviewsComponent,
     HomeComponent,
     NewsComponent,
-    BlogComponent
+    BlogComponent,
   ],
   imports: [
     BrowserModule,

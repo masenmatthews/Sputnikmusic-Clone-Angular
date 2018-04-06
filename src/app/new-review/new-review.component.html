@@ -1,28 +1,43 @@
-<!-- <h3 id="new-review-name">New review</h3>
-<div class="form-group">
-  <label>Enter artist:</label>
-  <input #newArtist class="form-control">
+<div class="panel panel-default">
+  <div class="panel-heading">
+  <h3>Add New Review</h3>
+    <div>
+      <div>
+        <label>Artist:</label>
+        <br>
+        <input #newArtist>
+      </div>
+
+      <div>
+        <label>Album:</label>
+        <br>
+        <input #newAlbum>
+      </div>
+
+      <div>
+        <label>Genre:</label>
+        <br>
+        <input #newGenre>
+      </div>
+
+      <div>
+        <label>Description:</label>
+        <br>
+        <input #newDescription>
+      </div>
+
+      <div>
+        <label>Rating::</label>
+        <br>
+        <input #newRating>
+      </div>
+
+      <div>
+        <label>Review body:</label>
+        <br>
+        <textarea #newBody></textarea>
+      </div>
+      <button (click)="submitForm(newArtist.value, newAlbum.value, newGenre.value, newDescription.value, newBody.value, newRating.value); newArtist.value='';, newAlbum.value='';, newGenre.value='';, newDescription.value='';, newBody.value='';, newRating.value=''">Add</button>
+    </div>
+  </div>
 </div>
-<div class="form-group">
-  <label>Enter album:</label>
-  <input #newAlbum class="form-control">
-</div>
-<div class="form-group">
-  <label>Enter genre:</label>
-  <input #newGenre class="form-control">
-</div>
-<div class="form-group">
-  <label>Enter short description/summary:</label>
-  <input #newDescription class="form-control">
-</div>
-<div class="form-group">
-  <label>Enter review body:</label>
-  <input #newBody class="form-control">
-</div>
-<div class="form-group">
-  <label>Enter album rating:</label>
-  <input #newRating class="form-control">
-</div>
-<div>
-  <button (click)="submitForm(newArtist.value, newAlbum.value, newGenre.value, newDescription.value, newBody.value, newRating.value); newArtist.value=''; newAlbum.value='';newGenre.value=''; newDescription.value=''; newBody.value=''; newRating.value='';" class="btn btn-primary btn-lg">Add review</button>
-</div> -->

@@ -4,6 +4,7 @@ import { Review } from '../models/review.model'
 import { REVIEWS } from '../mock-reviews';
 import { ReviewService } from '../review.service';
 import { DetailReviewComponent } from '../detail-review/detail-review.component'
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-edit-review',
@@ -20,10 +21,10 @@ export class EditReviewComponent implements OnInit {
  ngOnInit() {
  }
 
- deleteReview(reviewToDelete){
-   if(confirm("Are you sure you want to delete this review?")){
-     this.reviewService.deleteReview(reviewToDelete);
-   }
- }
+ // deleteReview(reviewToDelete){
+ //   if(confirm("Are you sure you want to delete this review?")){
+ //     this.reviewService.deleteReview(reviewToDelete);
+ //   }
+ // }
 
 }
