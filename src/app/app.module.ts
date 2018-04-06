@@ -15,6 +15,8 @@ import { ShowArticleComponent } from './show-article/show-article.component';
 import { ReviewsComponent } from './reviews/reviews.component';
 import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
+import { NewsComponent } from './news/news.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { routing } from './app.routing';
     ShowReviewComponent,
     ShowArticleComponent,
     ReviewsComponent,
-    HomeComponent
+    HomeComponent,
+    NewsComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
