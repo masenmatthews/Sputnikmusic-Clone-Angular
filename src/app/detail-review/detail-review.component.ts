@@ -2,6 +2,7 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { ViewReviewComponent } from '../view-review/view-review.component';
 import { ShowReviewComponent } from '../show-review/show-review.component';
+import { EditReviewComponent } from '../edit-review/edit-review.component';
 import { Location } from '@angular/common';
 import { Review } from '../models/review.model';
 import { ReviewService } from '../review.service';
