@@ -12,6 +12,7 @@ import { ReviewService } from '../review.service';
 })
 
 export class HomeComponent implements OnInit {
+  reviews: Review[];
 
   constructor(private router: Router, private reviewService: ReviewService) { }
 
