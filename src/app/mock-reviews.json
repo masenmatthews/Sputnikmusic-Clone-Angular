@@ -1,0 +1,16 @@
+{ "reviews": [{
+    "artist": "Opeth",
+    "album": "Blackwater Park",
+    "genre": "Progressive metal",
+    "description": "A timeless metal release",
+    "body": "INSERT REVIEW BODY HERE",
+    "rating": 4
+    }, {
+    "artist": "The Hotelier",
+    "album": "Goodness",
+    "genre": "Indie rock",
+    "description": "A timeless metal release",
+    "body": "A great follow-up to their last album, but not quite as good as its predecessor",
+    "rating": 4
+  }]
+}
