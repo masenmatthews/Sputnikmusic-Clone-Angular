@@ -14,15 +14,15 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 
 export class HomeComponent implements OnInit {
-  // reviews: FirebaseListObservable<any[]>;
-  reviews: Review[];
+  reviews: FirebaseListObservable<any[]>;
+
   constructor(private router: Router, private reviewService: ReviewService) { }
 
   ngOnInit() {
-    // this.reviews = this.reviewService.getReviews();
+    this.reviews = this.reviewService.getReviews();
   }
 
-  goToDetailPage(clickedReview: Review) {
+  goToDetailPage(clickedReview) {
     this.router.navigate(['reviews', clickedReview.$key]);
   };
 
