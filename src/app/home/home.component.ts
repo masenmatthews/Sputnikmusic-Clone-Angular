@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Review } from '../models/review.model';
-import { REVIEWS } from '../mock-reviews';
 import { ReviewService } from '../review.service';
 import { DetailReviewComponent } from '../detail-review/detail-review.component';
+import { ReviewsComponent } from '../reviews/reviews.component';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
   }
 
   goToDetailPage(clickedReview) {
-    this.router.navigate(['reviews', clickedReview.$key]);
+    this.router.navigate(['reviews/:id', clickedReview.$key]);
   };
 
 }

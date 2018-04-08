@@ -5,6 +5,7 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { DetailReviewComponent } from './detail-review/detail-review.component'
 import { NewsComponent } from './news/news.component';
 import { BlogComponent } from './blog/blog.component';
+import { NewReviewComponent } from './new-review/new-review.component';
 
 const appRoutes: Routes = [
   {
@@ -18,6 +19,10 @@ const appRoutes: Routes = [
   {
     path: 'reviews',
     component: ReviewsComponent
+  },
+  {
+    path: 'new-review',
+    component: NewReviewComponent
   },
   {
     path: 'news',
