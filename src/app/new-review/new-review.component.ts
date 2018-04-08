@@ -13,8 +13,8 @@ export class NewReviewComponent {
   constructor(private reviewService: ReviewService) { }
   @Output() sendReview = new EventEmitter();
 
-  submitForm(artist: string, album: string, genre: string, description: string, body: string, rating: number, id: number) {
-    let newReview: Review = new Review(artist, album, genre, description, body, rating, 0);
+  submitForm(artist: string, album: string, genre: string, description: string, body: string, rating: number) {
+    let newReview: Review = new Review(artist, album, genre, description, body, rating);
     this.reviewService.addReview(newReview);
     console.log(newReview);
   }

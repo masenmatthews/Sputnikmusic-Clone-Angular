@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Review } from './models/review.model';
-import { REVIEWS } from './mock-reviews';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -8,7 +7,7 @@ export class ReviewService {
   reviews: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-  this.reviews = database.list('reviews');
+    this.reviews = database.list('reviews');
   }
 
   getReviews() {
