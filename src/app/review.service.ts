@@ -16,15 +16,11 @@ export class ReviewService {
   }
 
   addReview(newReview: Review) {
-  this.reviews.push(newReview);
+    this.reviews.push(newReview);
   }
 
-  getReviewById(reviewId: number){
-//   for (var i = 0; i <= REVIEWS.length - 1; i++) {
-//     if (REVIEWS[i].id === reviewId) {
-//       return REVIEWS[i];
-//     }
-//   }
+  getReviewById(reviewId: string){
+    return this.database.object('reviews/' + reviewId);
 }
 
   // deleteReview(localReviewToDelete){

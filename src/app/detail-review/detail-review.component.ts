@@ -15,8 +15,8 @@ import { REVIEWS } from '../mock-reviews';
   providers: [ReviewService]
 })
 export class DetailReviewComponent implements OnInit {
-  reviewId: number = null;
-  reviewToDisplay: Review;
+  reviewId: string;
+  reviewToDisplay;
 
   @Input() childSelectedReview: Review;
 
@@ -28,7 +28,7 @@ export class DetailReviewComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-     this.reviewId = parseInt(urlParameters['id']);
+     this.reviewId = (urlParameters['id']);
     });
     this.reviewToDisplay = this.reviewService.getReviewById(this.reviewId);
   }

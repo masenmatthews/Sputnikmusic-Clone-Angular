@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
   }
 
   goToDetailPage(clickedReview: Review) {
-    // this.router.navigate(['reviews', clickedReview.id]);
+    this.router.navigate(['reviews', clickedReview.$key]);
   };
 
 }
