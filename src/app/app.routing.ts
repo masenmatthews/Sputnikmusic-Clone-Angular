@@ -13,16 +13,16 @@ const appRoutes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'reviews/new-review',
+    component: NewReviewComponent
+  },
+  {
     path: 'reviews/:id',
     component: DetailReviewComponent
   },
   {
     path: 'reviews',
     component: ReviewsComponent
-  },
-  {
-    path: 'new-review',
-    component: NewReviewComponent
   },
   {
     path: 'news',
