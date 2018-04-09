@@ -31,6 +31,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   * Type "ng serve" to launch development server
   * Navigate to localhost:4200 in Google Chrome or desired browser
 
+## Viewing application via firebase
+  * In order to view the application without running through the setup process, navigate to https://sputnik-clone.firebaseapp.com/ in Google Chrome or another web browser. 
+
 ## Specifications
 * Site allows user to:
     -create, read, update, and delete news items
